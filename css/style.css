@@ -17,6 +17,8 @@ nav {
   /* sets the flex container into a row */
   justify-content: space-between;
   /* creates space between the "destinations" and "actions" div id child elements */
+  align-items: center;
+  /* aligns the p elements into the center of the row*/
 }
 
 #destinations,
@@ -26,8 +28,8 @@ nav {
   flex-direction: row;
   gap: 15px;
   /* creates a 15px gap between each <p> element */
-  align-items: center;
-  /* aligns the p elements into the center of the row */
+  justify-content: center;
+  /* aligns the p elements into the center of the column */
 }
 
 p {
@@ -45,7 +47,9 @@ section {
 #hero, #headers {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  /* aligns the child elements into a column */
+  justify-content: space-around; 
+  /* createse space around the child elements of the "hero" and "headers" ids*/
   align-items: center;
 }
 
@@ -83,7 +87,13 @@ input {
 main {
   background-color: white;
   padding: 32px 72px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
 }
+
+
 
 #subnav {
   display: flex;
@@ -109,6 +119,8 @@ nav button {
 
 .card-footer {
   font-size: 14px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .card-footer * {

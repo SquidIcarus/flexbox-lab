@@ -85,6 +85,12 @@ main {
   padding: 32px 72px;
 }
 
+#subnav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 nav button {
   background-color: #ea4c89;
   border-radius: 8px;

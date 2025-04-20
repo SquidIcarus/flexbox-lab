@@ -11,6 +11,15 @@
   nav {
     background-color: white;
     padding: 8px 16px;
+    display: flex; /* converts the <nav> element parent into a flex container  */
+    flex-direction: row; /* sets the flex container into a row */
+    justify-content: space-between; /* creates space between the "destinations" and "actions" div id child elements */
+  }
+
+  #destinations, #actions { /* combines the "destinations" and "actions" id into one block */
+    display: flex; 
+    gap: 15px; /* creates a 15px gap between each <p> element */
+    align-items: center; /* aligns the p elements into the center of the row */
   }
   
   p {
